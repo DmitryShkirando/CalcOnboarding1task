@@ -398,6 +398,3 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-/.vs/CalcV2/v17/DocumentLayout.json
-/obj/Debug/net8.0/CalcV2.AssemblyInfo.cs
-/obj/Debug/net8.0/CalcV2.AssemblyInfoInputs.cache
