@@ -1,8 +1,9 @@
-﻿using OpenQA.Selenium.Appium;
+﻿using CalcV2.PageObject;
+using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 
 
-namespace CalcV2
+namespace CalcV2.Testes
 {
     public class Tests
     {
@@ -14,7 +15,7 @@ namespace CalcV2
         {
             var options = new AppiumOptions();
             options.PlatformName = "Windows";
-            options.AddAdditionalCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App"); 
+            options.AddAdditionalCapability("app", "Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
 
             driver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
             calcPage = new CalcPageObject(driver);
